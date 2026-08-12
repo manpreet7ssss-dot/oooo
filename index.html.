@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry, Mehak ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #ffe1ec, #ffd1dc, #fff0f5);
+  color: #5a1830;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 92%;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  bottom: -30px;
+  font-size: 25px;
+  animation: floatUp 7s linear infinite;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero {
+  background: rgba(255,255,255,0.75);
+  padding: 45px 25px;
+  border-radius: 30px;
+  box-shadow: 0 15px 40px rgba(150, 30, 70, 0.18);
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 9vw, 75px);
+  color: #d4145a;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  font-size: clamp(22px, 5vw, 35px);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 30px;
+  background: #e91e63;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(233,30,99,.3);
+}
+
+section {
+  padding: 70px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.card {
+  background: rgba(255,255,255,.82);
+  padding: 30px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(100,20,50,.12);
+}
+
+h2 {
+  color: #d4145a;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+}
+
+p {
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+.love-letter {
+  font-size: 18px;
+}
+
+.big-heart {
+  text-align: center;
+  font-size: 90px;
+  animation: heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+
+.sorry-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  height: 330px;
+  overflow-y: auto;
+  line-height: 1.8;
+  font-size: 15px;
+  border: 2px solid #ffd0df;
+}
+
+.question {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff5f8;
+  border-radius: 18px;
+}
+
+.question button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #f5a7bd;
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #681d39;
+}
+
+.question button:hover {
+  background: #ffdce8;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  color: #d4145a;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.proposal {
+  text-align: center;
+  background: linear-gradient(135deg,#fff,#ffe5ee);
+}
+
+.proposal h2 {
+  font-size: 40px;
+}
+
+.proposal-text {
+  font-size: 21px;
+  line-height: 2;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 15px;
+  background: #8f1745;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+.hidden-message {
+  display: none;
+  margin-top: 25px;
+  font-size: 21px;
+  color: #d4145a;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <div class="hero">
+      <div class="big-heart">❤️</div>
+
+      <h1>I'm Sorry, Mehak</h1>
+
+      <h2>My Babyyy ❤️</h2>
+
+      <p>
+        I made this little corner of the internet just for you,
+        because sometimes a simple "sorry" isn't enough to explain
+        how much I truly care.
+      </p>
+
+      <button class="btn"
+      onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
+        Open My Heart 💗
+      </button>
+    </div>
+  </div>
+</header>
+
+<section id="letter">
+<div class="container">
+
+  <div class="card">
+    <h2>For You, Mehak 💕</h2>
+
+    <p class="love-letter">
+      My babyyy, I am genuinely sorry for hurting you.
+      I know that my anger and my actions may have made you feel bad,
+      and that's something I never wanted to happen.
+      You deserve kindness, respect, patience and love from me.
+      <br><br>
+
+      I can't change what already happened, but I can learn from it.
+      I don't want my anger to become bigger than the love and respect
+      I have for you.
+      <br><br>
+
+      So today, I'm not just saying sorry.
+      I'm promising to try harder, listen better, understand you more,
+      and think before I react.
+      <br><br>
+
+      You are important to me, Mehak.
+      Your smile matters to me.
+      Your feelings matter to me.
+      And most importantly, <b>you matter to me.</b> ❤️
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>My 2,500 Sorrys 🥺❤️</h2>
+
+    <p style="text-align:center;margin-bottom:20px;">
+      I could write "sorry" once and say it quickly...
+      but I wanted you to see just how seriously I mean it.
+    </p>
+
+    <div class="sorry-box" id="sorryBox"></div>
+  </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+  <div class="card">
+    <h2>One Little Promise 🤞❤️</h2>
+
+    <p style="text-align:center;">
+      I promise that when I'm upset, I'll try to communicate instead
+      of letting anger speak for me.
+      <br><br>
+      I promise to respect your feelings.
+      <br>
+      I promise to listen.
+      <br>
+      I promise to appreciate you.
+      <br>
+      And I promise that saying sorry won't just be a word —
+      I'll try to show it through my actions.
+    </p>
+  </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+  <div class="card">
+    <h2>A Few Questions For You 💌</h2>
+
+    <div class="question">
+      <p><b>1. Do you think this apology is coming from my heart?</b></p>
+
+      <button onclick="answer('I really hope you can feel how genuine it is. ❤️')">
+        A) Yes ❤️
+      </button>
+
+      <button onclick="answer('I will keep showing you through my actions. 🥺')">
+        B) Maybe
+      </button>
+
+      <button onclick="answer('Then I'll work harder to prove it to you. 💗')">
+        C) Give me some time
+      </button>
+    </div>
+
+    <div class="question">
+      <p><b>2. What should I do after making a mistake?</b></p>
+
+      <button onclick="answer('Exactly. I should listen and learn. ❤️')">
+        A) Listen and learn
+      </button>
+
+      <button onclick="answer('Yes — understanding your feelings matters. 💕')">
+        B) Understand your feelings
+      </button>
+
+      <button onclick="answer('And most importantly, change my behavior. 🤞')">
+        C) All of these
+      </button>
+    </div>
+
+    <div class="question">
+      <p><b>3. One last question...</b></p>
+
+      <button onclick="answer('You just made my heart smile. ❤️')">
+        A) Can I have another chance?
+      </button>
+
+      <button onclick="answer('I'll respect whatever you need. ❤️')">
+        B) Do you need some time?
+      </button>
+
+      <button onclick="answer('Whatever your answer is, your feelings deserve respect. 💗')">
+        C) Let's talk when you're ready
+      </button>
+    </div>
+
+    <div id="answer"></div>
+
+  </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+  <div class="card proposal">
+
+    <div class="big-heart">💖</div>
+
+    <h2>Mehak... Will You? 🌹</h2>
+
+    <p class="proposal-text">
+      I don't want to make some huge dramatic promise.
+      <br><br>
+
+      I just want to ask you something honestly...
+      <br><br>
+
+      <b>
+      Would you give me the chance to make things better,
+      to understand you more,
+      to respect you more,
+      and to keep choosing you with kindness?
+      </b>
+
+      <br><br>
+
+      I want something where we can talk,
+      laugh, understand each other,
+      forgive each other,
+      and grow together.
+      <br><br>
+
+      <b>
+      Mehak, my babyyy...
+      would you give me another chance? ❤️
+      </b>
+    </p>
+
+    <button class="btn" onclick="showMessage()">
+      My Answer Is... 💌
+    </button>
+
+    <div class="hidden-message" id="proposalAnswer">
+      Whatever your answer is, I will respect it. ❤️
+      <br>
+      But I really hope your heart can feel how sincerely sorry I am.
+      <br><br>
+      You mean a lot to me, Mehak. 🥺❤️
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+<footer>
+  <p>
+    Made with a sorry heart, lots of love and 2,500 apologies ❤️
+  </p>
+  <p style="margin-top:10px;">
+    For Mehak — my babyyy 💕
+  </p>
+</footer>
+
+<script>
+
+/* EXACTLY 2,500 SORRYS */
+const sorryBox = document.getElementById("sorryBox");
+
+let sorryText = "";
+
+for (let i = 1; i <= 2500; i++) {
+  sorryText += "Sorry ❤️ ";
+}
+
+sorryBox.innerText = sorryText;
+
+
+/* MCQ answers */
+function answer(text) {
+  document.getElementById("answer").innerText = text;
+}
+
+
+/* Proposal message */
+function showMessage() {
+  document.getElementById("proposalAnswer").style.display = "block";
+}
+
+
+/* Floating hearts */
+const hearts = ["❤️","💗","💕","💖","💘","🌸","💞"];
+
+function createHeart() {
+
+  const heart = document.createElement("div");
+
+  heart.className = "heart";
+
+  heart.innerHTML =
+    hearts[Math.floor(Math.random() * hearts.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+
+  heart.style.animationDuration =
+    (4 + Math.random() * 5) + "s";
+
+  heart.style.fontSize =
+    (15 + Math.random() * 25) + "px";
+
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 9000);
+}
+
+setInterval(createHeart, 500);
+
+</script>
+
+</body>
+</html>
